@@ -20,8 +20,8 @@ $html = <<< HEREDOC
     
 <img src="{$pic_a}"><img src="images/mul.jpg"><img src="{$pic_b}">
 
-<p><a href="question5.php">看下一題</a></p>
-<p><a href="answer5.php?a={$a}&b={$b}">看答案</a></p>
+<p><a href="question5.php">view next question 看下一題</a></p>
+<p><a href="answer5.php?a={$a}&b={$b}">view ansmwer 看答案</a></p>
 
 </body>
 </html>
