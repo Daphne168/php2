@@ -6,14 +6,14 @@ $b=isset($_GET['b']) ? $_GET['b']:1;
 
 $ans= $a * $b;
 
-$n1 = $ans % 10;         //取得答案的個位數字
-$n2 = floor($ans/10);    //取得簽案的十位數字
+$n1 = $ans % 10;         //pick the right answer 取得答案的個位數字
+$n2 = floor($ans/10);    //pick the left answer 取得答案的十位數字
 
 $pic_n1 = '<img src="images/' . $n1 . '.jpg">';
 $pic_n2 = '<img src="images/' . $n2 . '.jpg">';
 
 
-//十位數字產生0時，全除方式
+//if the left answer is zero, don't show it. 十位數字產生0時，不出現圖片
 if($n2==0)
 {
     $pic_n2 = '';
